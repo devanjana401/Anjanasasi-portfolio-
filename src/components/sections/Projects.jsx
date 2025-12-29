@@ -1,12 +1,29 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa"
 // importing images
+import plantifyImg from "../../assets/images/Plantify.png"
 import yoginImg from "../../assets/images/Yogin.png";
 import weatherImg from "../../assets/images/Weather-app.png";
 import starbucksImg from "../../assets/images/Starbucks.png"
 import dmartImg from "../../assets/images/Dmart.png"
 
 const projects = [
+  {
+    name: "Plantify",
+    image: plantifyImg, 
+    live: "https://plantify-crza81ydm-anjana-sasis-projects.vercel.app",
+    github: "https://github.com/devanjana401/Plantify.git",
+    description: "Developed a Plantify web application using React JS, Redux, React Router DOM, Axios, Tailwind CSS, Bootstrap, React Bootstrap, and CSS, allowing users to browse plants and gardening kits with dynamic data fetching, centralized state management, and seamless navigation.",
+    features: [
+      "Plant & gardening kit browsing",
+      "Dynamic data fetching with Axios",
+      "Centralized state management using Redux",
+      "Client-side routing with React Router DOM",
+      "Responsive UI design",
+    ],
+
+    tags: ["React JS", "Redux", "Axios", "React Router DOM", "Tailwind CSS", "Bootstrap", "React Bootstrap", "CSS"],
+  },
   {
     name: "Yogin",
     image: yoginImg, 

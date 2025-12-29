@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Home from './components/sections/Home'
 import Navbar from './components/Navbar'
 import Contact from './components/sections/Contact'
