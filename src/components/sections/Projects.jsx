@@ -1,41 +1,45 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa"
-// importing images
-import plantifyImg from "../../assets/images/Plantify.png"
+import { FaGithub } from "react-icons/fa";
+import plantifyImg from "../../assets/images/Plantify.png";
 import yoginImg from "../../assets/images/Yogin.png";
 import weatherImg from "../../assets/images/Weather-app.png";
-import starbucksImg from "../../assets/images/Starbucks.png"
-import dmartImg from "../../assets/images/Dmart.png"
+import starbucksImg from "../../assets/images/Starbucks.png";
+import dmartImg from "../../assets/images/Dmart.png";
 
 const projects = [
   {
     name: "Plantify",
-    image: plantifyImg, 
+    image: plantifyImg,
     live: "https://plantify-crza81ydm-anjana-sasis-projects.vercel.app",
     github: "https://github.com/devanjana401/Plantify.git",
-    description: "Developed a Plantify web application using React JS, Redux, React Router DOM, Axios, Tailwind CSS, Bootstrap, React Bootstrap, and CSS, allowing users to browse plants and gardening kits with dynamic data fetching, centralized state management, and seamless navigation.",
+    description:
+      "Developed a Plantify web application using React JS, Redux, React Router DOM, Axios, Tailwind CSS, Bootstrap, React Bootstrap, CSS, and JSON Server, allowing users to browse plants and gardening kits with dynamic data fetching, centralized state management, and seamless navigation.",
     features: [
       "Plant & gardening kit browsing",
-      "Dynamic data fetching with Axios",
+      "Dynamic data fetching with Axios and JSON Server",
       "Centralized state management using Redux",
       "Client-side routing with React Router DOM",
-      "Responsive UI design",
     ],
-
-    tags: ["React JS", "Redux", "Axios", "React Router DOM", "Tailwind CSS", "Bootstrap", "React Bootstrap", "CSS"],
+    tags: [
+      "React JS",
+      "Redux",
+      "Axios",
+      "React Router DOM",
+      "Tailwind CSS",
+      "Bootstrap",
+      "React Bootstrap",
+      "CSS",
+      "JSON Server",
+    ],
   },
   {
     name: "Yogin",
-    image: yoginImg, 
+    image: yoginImg,
     live: "https://devanjana401.github.io/Yogin/",
     github: "https://github.com/devanjana401/Yogin.git",
-    description: "Developed a yoga website using HTML, CSS, SCSS, Bootstrap, JavaScript, and jQuery, integrating a local API to fetch and display poses dynamically with interactive DOM updates. Added form validation, EmailJS for email handling, and LocalStorage to manage user inputs and preferences.",
-    features: [
-      "Local API integration",
-      "Dynamic UI updates",
-      "Form validation",
-      "LocalStorage & EmailJS",
-    ],
+    description:
+      "Developed a yoga website using HTML, CSS, SCSS, Bootstrap, JavaScript, and jQuery, integrating a local API to fetch and display poses dynamically with interactive DOM updates. Added form validation, EmailJS for email handling, and LocalStorage to manage user inputs and preferences.",
+    features: ["Local API integration", "Dynamic UI updates", "Form validation", "LocalStorage & EmailJS"],
     tags: ["HTML", "CSS", "SCSS", "Bootstrap", "jQuery", "JavaScript", "API"],
   },
   {
@@ -43,13 +47,9 @@ const projects = [
     image: weatherImg,
     live: "https://devanjana401.github.io/Weather-app/",
     github: "https://github.com/devanjana401/Weather-app.git",
-    description: "Built a Weather App using HTML, CSS, and JavaScript that fetches real-time data from the OpenWeatherMap API and displays temperature, humidity, wind speed, and icons based on city search. Added error handling and dynamic DOM updates to improve interactivity and ensure a smooth user experience.",
-    features: [
-      "City-based weather search",
-      "Dynamic temperature & humidity",
-      "Error handling",
-      "Interactive DOM updates",
-    ],
+    description:
+      "Built a Weather App using HTML, CSS, and JavaScript that fetches real-time data from the OpenWeatherMap API and displays temperature, humidity, wind speed, and icons based on city search. Added error handling and dynamic DOM updates to improve interactivity and ensure a smooth user experience.",
+    features: ["City-based weather search", "Dynamic temperature & humidity", "Error handling", "Interactive DOM updates"],
     tags: ["HTML", "CSS", "JavaScript", "API"],
   },
   {
@@ -59,12 +59,7 @@ const projects = [
     github: "https://github.com/devanjana401/Starbucks-clone.git",
     description:
       "Designed and developed static, responsive websites to practice real-world layouts and improve UI structure. Used HTML, CSS, and Bootstrap to ensure smooth navigation, cross-browser compatibility, and mobile-friendly performance.",
-    features: [
-      "Responsive layouts",
-      "Smooth navigation",
-      "Cross-browser compatibility",
-      "Mobile-friendly design",
-    ],
+    features: ["Responsive layouts", "Smooth navigation", "Cross-browser compatibility", "Mobile-friendly design"],
     tags: ["HTML", "CSS", "Bootstrap"],
   },
   {
@@ -74,12 +69,7 @@ const projects = [
     github: "https://github.com/devanjana401/DMart-clone.git",
     description:
       "Built responsive and neat web pages that follow real-world layouts and offer smooth navigation. Used HTML, CSS, and Bootstrap with reusable styles, mobile-friendly design, cross-browser support, and better loading performance.",
-    features: [
-      "Responsive UI",
-      "Reusable components",
-      "Cross-browser support",
-      "Optimized performance",
-    ],
+    features: ["Responsive UI", "Reusable components", "Cross-browser support", "Optimized performance"],
     tags: ["HTML", "CSS", "Bootstrap"],
   },
 ];
@@ -97,22 +87,22 @@ const Projects = () => {
           These projects reflect my experience in building responsive designs, API integrations, and real-world web applications.
         </p>
 
-        {/* cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 place-items-center">
+        {/* cards grid */}
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <div
               key={index}
-              className=" w-full max-w-[440px] md:max-w-full lg:max-w-[440px] rounded-2xl bg-gradient-to-br from-purple-600 to-pink-500 p-[2px] shadow-xl hover:scale-105 transition-transform"
+              className="w-full max-w-[440px] rounded-2xl bg-gradient-to-br from-purple-600 to-pink-500 p-[2px] shadow-xl hover:scale-105 transition-transform h-full"
             >
-              <div className="bg-[#1a1a1a] rounded-2xl p-4">
-                {/* image */}
-                <div className="relative w-full h-56">
+              <div className="bg-[#1a1a1a] rounded-2xl p-4 flex flex-col h-full">
+               
+                <div className="relative w-full aspect-[16/9] mb-4">
                   <img
                     src={project.image}
                     alt={project.name}
                     className="w-full h-full object-cover rounded-xl"
                   />
-                  {/* github icon */}
                   <a
                     href={project.github}
                     target="_blank"
@@ -122,36 +112,38 @@ const Projects = () => {
                   </a>
                 </div>
 
-                {/* project details + live link */}
-                <div className="flex justify-between items-center mt-5">
-                  <h3 className="text-2xl font-semibold">{project.name}</h3>
+                <div className="flex flex-col flex-grow">
+                  <div className="flex justify-between items-center mb-2">
+                    <h3 className="text-2xl font-semibold">{project.name}</h3>
+                    <a
+                      href={project.live}
+                      target="_blank"
+                      className="text-blue-400 underline underline-offset-2 font-medium"
+                    >
+                      Go Live
+                    </a>
+                  </div>
 
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    className="text-blue-400 underline underline-offset-2 font-medium"
-                  >
-                    Go Live
-                  </a>
-                </div>
+                  <p className="text-gray-300 text-[15px] leading-relaxed mb-2 text-justify">
+                    {project.description}
+                  </p>
 
-                <p className="text-gray-300 mt-3 text-[15px] leading-relaxed">
-                  {project.description}
-                </p>
+                  <div>
+                    <h4 className="mt-2 font-semibold text-[17px]">Features</h4>
+                    <ul className="list-disc ml-5 mt-1 space-y-1 text-gray-400 text-[15px]">
+                      {project.features.map((f, i) => (
+                        <li key={i}>{f}</li>
+                      ))}
+                    </ul>
 
-                <h4 className="mt-5 font-semibold text-[17px]">Features</h4>
-                <ul className="list-disc ml-5 mt-2 space-y-1 text-gray-400 text-[15px]">
-                  {project.features.map((f, i) => (
-                    <li key={i}>{f}</li>
-                  ))}
-                </ul>
-
-                <div className="flex flex-wrap gap-2 mt-5">
-                  {project.tags.map((tag, i) => (
-                    <span key={i} className="text-[14px] text-purple-300">
-                      #{tag}
-                    </span>
-                  ))}
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      {project.tags.map((tag, i) => (
+                        <span key={i} className="text-[14px] text-purple-300">
+                          #{tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
