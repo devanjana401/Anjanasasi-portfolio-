@@ -1,4 +1,6 @@
 import React from "react";
+import { FaHtml5, FaCss3Alt, FaReact, FaBootstrap } from "react-icons/fa";
+import { SiJavascript, SiRedux, SiTailwindcss, SiJson, SiAxios, SiJquery, SiSass } from "react-icons/si";
 
 const About = () => {
   return (
@@ -55,6 +57,54 @@ const About = () => {
             </div>
           </div>
 
+        </div>
+
+        {/* skills / tech stack icons */}
+        <div className="mt-16 flex flex-wrap gap-6 justify-center">
+          <div className="flex flex-col items-center">
+            <FaHtml5 className="text-orange-500 text-5xl" />
+            <span className="text-sm mt-1">HTML</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaCss3Alt className="text-blue-500 text-5xl" />
+            <span className="text-sm mt-1">CSS</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiJquery className="text-blue-600 text-5xl" />
+            <span className="text-sm mt-1">jQuery</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiSass className="text-pink-400 text-5xl" />
+            <span className="text-sm mt-1">Sass</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiJavascript className="text-yellow-400 text-5xl" />
+            <span className="text-sm mt-1">JavaScript</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaReact className="text-cyan-400 text-5xl" />
+            <span className="text-sm mt-1">React</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiRedux className="text-purple-600 text-5xl" />
+            <span className="text-sm mt-1">Redux</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiTailwindcss className="text-sky-400 text-5xl" />
+            <span className="text-sm mt-1">Tailwind CSS</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <FaBootstrap className="text-purple-500 text-5xl" />
+            <span className="text-sm mt-1">Bootstrap</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiJson className="text-gray-400 text-5xl" />
+            <span className="text-sm mt-1">JSON Server</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <SiAxios className="text-blue-400 text-5xl" />
+            <span className="text-sm mt-1">Axios</span>
+          </div>
         </div>
 
       </div>

@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Contact = () => {
   const formRef = useRef();
@@ -37,10 +38,22 @@ const Contact = () => {
       className="w-full bg-[#0f0f0f] py-20 px-6"
     >
       <div className="max-w-xl w-full mx-auto pt-4">
-
         <h2 className="text-5xl font-bold text-center text-white">
           Get in touch
         </h2>
+
+        {/* contact info */}
+        <div className="mt-6 flex justify-center gap-8 text-white text-lg">
+          <a href="mailto:devanjanasasi.com" className="flex items-center gap-2 hover:text-purple-400">
+            <FaEnvelope /> Email
+          </a>
+          <a href="https://github.com/devanjana401" target="_blank" className="flex items-center gap-2 hover:text-purple-400">
+            <FaGithub /> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/anjana-sasi-0aba47252/" target="_blank" className="flex items-center gap-2 hover:text-purple-400">
+            <FaLinkedin /> LinkedIn
+          </a>
+        </div>
 
         {/* form */}
         <form
@@ -48,11 +61,8 @@ const Contact = () => {
           onSubmit={sendEmail}
           className="mt-10 flex flex-col gap-6"
         >
-
           <div className="flex flex-col">
-            <label className="text-lg mb-1 text-white">
-              Your Name
-            </label>
+            <label className="text-lg mb-1 text-white">Your Name</label>
             <input
               type="text"
               name="from_name"
@@ -63,9 +73,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-lg mb-1 text-white">
-              Your Email
-            </label>
+            <label className="text-lg mb-1 text-white">Your Email</label>
             <input
               type="email"
               name="from_email"
@@ -76,9 +84,7 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col">
-            <label className="text-lg mb-1 text-white">
-              Your Message
-            </label>
+            <label className="text-lg mb-1 text-white">Your Message</label>
             <textarea
               rows="6"
               name="message"
@@ -94,7 +100,6 @@ const Contact = () => {
           >
             Send
           </button>
-
         </form>
       </div>
     </section>

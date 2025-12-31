@@ -14,7 +14,7 @@ const Navbar = () => {
         </h1>
 
         {/* navbar menu */}
-        <ul className="hidden md:flex items-center gap-10 text-lg">
+        <ul className="hidden md:flex items-center gap-10 text-xl">
           <Link to="home" smooth={true} duration={600} offset={-80} className="cursor-pointer hover:text-purple-400">
             Home
           </Link>
