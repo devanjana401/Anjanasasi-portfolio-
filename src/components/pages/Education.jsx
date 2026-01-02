@@ -3,6 +3,15 @@ import React from "react";
 const Education = () => {
   const education = [
     {
+      title: "Python Full Stack Intern",
+      school: "Techolas Technologies",
+      date: "July 2025 – Present",
+      points: [
+        "Hands-on training in Python Full Stack development",
+        "Worked with frontend, backend, and database basics",
+      ],
+    },
+    {
       title: "Bachelor of Technology",
       school: "Electronics & Communication Engineering",
       date: "2022 - 2025",
