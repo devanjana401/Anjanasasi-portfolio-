@@ -10,7 +10,7 @@ const Navbar = () => {
 
         {/* logo */}
         <h1 className="text-lg font-bold tracking-wide">
-          ANJANA SASI | DEVELOPER
+          ANJANA SASI | FULLSTACK DEVELOPER
         </h1>
 
         {/* navbar menu */}

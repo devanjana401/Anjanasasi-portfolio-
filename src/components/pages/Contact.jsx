@@ -10,10 +10,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_h5htjon",
+        "template_m5sm3ao",
         formRef.current,
-        "YOUR_PUBLIC_KEY"
+        "JYvvIOQtYOD-ifxcc"
       )
       .then(
         () => {
@@ -42,7 +42,6 @@ const Contact = () => {
           Get in touch
         </h2>
 
-        {/* contact info */}
         <div className="mt-6 flex justify-center gap-8 text-white text-lg">
           <a href="mailto:devanjanasasi.com" className="flex items-center gap-2 hover:text-purple-400">
             <FaEnvelope /> Email
@@ -55,7 +54,6 @@ const Contact = () => {
           </a>
         </div>
 
-        {/* form */}
         <form
           ref={formRef}
           onSubmit={sendEmail}

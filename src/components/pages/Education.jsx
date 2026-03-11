@@ -8,7 +8,7 @@ const Education = () => {
       date: "July 2025 – Present",
       points: [
         "Hands-on training in Python Full Stack development",
-        "Worked with frontend, backend, and database basics",
+        "Worked with frontend, backend, and database",
       ],
     },
     {

@@ -5,8 +5,34 @@ import yoginImg from "../../assets/images/Yogin.png";
 import weatherImg from "../../assets/images/Weather-app.png";
 import starbucksImg from "../../assets/images/Starbucks.png";
 import dmartImg from "../../assets/images/Dmart.png";
+import BookImg from "../../assets/images/BookMnt.png";
 
 const projects = [
+  {
+    name: "Book Mnt System",
+    image: BookImg,
+    live: "https://bookfrontend.anjanasasi.online/",
+    github: "https://github.com/devanjana401/ReactCrud-DjangoApi-Frontend-New.git",
+    description:
+      "Developed a full-stack Book Management web application using React JS for the frontend and Django REST Framework for backend APIs, enabling users to manage books with efficient CRUD operations and seamless frontend–backend integration.",
+    features: [
+      "CRUD operations for adding, updating, deleting, and viewing books",
+      "RESTful API integration between React frontend and Django backend",
+      "PostgreSQL database design for efficient data storage and retrieval",
+      "Handled CORS using django-cors-headers and version control with Git",
+    ],
+    tags: [
+      "React JS",
+      "Django",
+      "Django REST Framework",
+      "Fetch API",
+      "PostgreSQL",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Git",
+    ],
+  },
   {
     name: "Plantify",
     image: plantifyImg,
@@ -96,7 +122,7 @@ const Projects = () => {
               className="w-full max-w-[440px] rounded-2xl bg-gradient-to-br from-purple-600 to-pink-500 p-[2px] shadow-xl hover:scale-105 transition-transform h-full"
             >
               <div className="bg-[#1a1a1a] rounded-2xl p-4 flex flex-col h-full">
-               
+
                 <div className="relative w-full aspect-[16/9] mb-4">
                   <img
                     src={project.image}
